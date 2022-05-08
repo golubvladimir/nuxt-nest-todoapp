@@ -33,9 +33,15 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    'bootstrap-vue/nuxt'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  // BootstrapVue config
+  bootstrapVue: {
+    components: ['BCard', 'BCardText', 'BButton', 'BForm', 'BFormGroup', 'BFormInput']
   }
 }
