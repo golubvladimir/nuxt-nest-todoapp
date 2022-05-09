@@ -33,7 +33,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    '@nuxtjs/axios'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -43,5 +44,11 @@ export default {
   // BootstrapVue config
   bootstrapVue: {
     components: ['BCard', 'BCardText', 'BButton', 'BForm', 'BFormGroup', 'BFormInput']
+  },
+
+  // Axios config
+  axios: {
+    baseURL: 'http://localhost:4000/',
+    browserBaseURL: 'http://localhost:4000/'
   }
 }

@@ -9,9 +9,9 @@ export const mutations = {
 };
 
 export const actions = {
-  getTasks: ({ commit }) => {
+  async getTasks({ commit }) {
     // get tasks
-    const tasks = [];
+    const tasks = await this.$axios.$get('/tasks');
 
     commit('setTasks', tasks);
   }

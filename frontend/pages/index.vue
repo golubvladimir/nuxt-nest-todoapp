@@ -12,6 +12,9 @@
 
   export default {
     name: 'IndexPage',
+    async asyncData({ store }) {
+      await store.dispatch('tasks/getTasks');
+    },
     components: {
       TaskList: () => import('@/components/pages/index/TaskList')
     },
